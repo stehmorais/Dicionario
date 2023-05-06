@@ -66,10 +66,10 @@
                             <td th:text="${p.significado}">Significado</td>
                         </tr>
                     </tbody>
-                    <div th:if="${palavras.size() == 0}" class="alert alert-warning col-4">
-                        Ainda não existem palavras registradas
-                    </div>
                   </table>
+                  <div th:if="${palavras.size() == 0}" class="alert alert-danger col-12">
+                    Ainda não existem palavras registradas
+                </div>
                 </div>
               </div>
               
