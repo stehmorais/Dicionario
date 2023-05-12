@@ -41,6 +41,24 @@ public class IndexController {
         System.out.println(palavra);
         return "redirect:/";
     }
+
+       @DeleteMapping("/soma")
+    public String delete(){
+        System.out.printf("@DeleteMapping");
+        return "index";
+    }
+
+    @PutMapping("/soma")
+    public String put(){
+        System.out.printf("@PutMapping");
+        return "index";
+    }
+
+    @PatchMapping("/soma")
+    public String patch(){
+        System.out.printf("@PacthMapping");
+        return "index";
+    }
 }
 
 // Download Thunder Client
